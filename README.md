@@ -14,6 +14,12 @@ Table of Contents
 - [License](#license)
 - [Credits](#credits)
 
+Important Changes and Notes
+===
+-  We have changed src/server/webhooks/pull_request.js file to allow the using of private repos.
+-  You must define GITHUB_TOKEN variable inside .env file, which must be created with "repo - Full control of private repositories" rules, to be able to show a "Contributor License Agreement" mesage, during a pull request.
+-  If you want to see an additional user message, during the pull request creating, you can also define GITHUB_USER and GITHUB_PASS variables inside .env file (not required).
+
 Contributor License Agreement assistant
 ===
 Streamline your workflow and let CLA assistant handle the legal side of contributions to a repository for you. CLA assistant enables contributors to sign CLAs from within a pull request.
