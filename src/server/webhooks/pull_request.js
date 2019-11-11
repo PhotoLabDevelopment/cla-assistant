@@ -131,7 +131,7 @@ async function handleWebHook(args, item) {
 
 module.exports = async function (req, res) {
 
-    if (['opened', 'reopened', 'synchronize'].indexOf(req.args.action) > -1 && (req.args.repository && req.args.repository.private == false)) {
+    if (['opened', 'reopened', 'synchronize'].indexOf(req.args.action) > -1) {
         // eslint-disable-next-line no-console
         console.time('webhook')
 
